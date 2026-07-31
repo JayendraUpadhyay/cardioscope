@@ -1,0 +1,29 @@
+Could not save font_manager cache [Errno 13] Permission denied: 'C:\\Users\\91941\\.matplotlib\\fontlist-v3.11.0.json.matplotlib-lock'
+Traceback (most recent call last):
+  File "C:\Users\91941\.gemini\antigravity\scratch\cardioscope\notebooks\05_ecg_model.py", line 418, in <module>
+    ax2_twin.fill_between(range(3000), saliency[:3000], alpha=0.4, color='tomato', label='Saliency')
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91941\.gemini\antigravity\scratch\cardioscope\.venv\Lib\site-packages\matplotlib\__init__.py", line 1528, in inner
+    return func(
+        ax,
+        *map(cbook.sanitize_sequence, args),
+        **{k: cbook.sanitize_sequence(v) for k, v in kwargs.items()})
+  File "C:\Users\91941\.gemini\antigravity\scratch\cardioscope\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6117, in fill_between
+    return self._fill_between_x_or_y(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        "x", x, y1, y2,
+        ^^^^^^^^^^^^^^^
+        where=where, interpolate=interpolate, step=step, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91941\.gemini\antigravity\scratch\cardioscope\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6103, in _fill_between_x_or_y
+    collection = mcoll.FillBetweenPolyCollection(
+        ind_dir, ind, dep1, dep2,
+        where=where, interpolate=interpolate, step=step, **kwargs)
+  File "C:\Users\91941\.gemini\antigravity\scratch\cardioscope\.venv\Lib\site-packages\matplotlib\collections.py", line 1452, in __init__
+    verts = self._make_verts(t, f1, f2, where)
+  File "C:\Users\91941\.gemini\antigravity\scratch\cardioscope\.venv\Lib\site-packages\matplotlib\collections.py", line 1516, in _make_verts
+    self._validate_shapes(self.t_direction, self._f_direction, t, f1, f2)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91941\.gemini\antigravity\scratch\cardioscope\.venv\Lib\site-packages\matplotlib\collections.py", line 1565, in _validate_shapes
+    raise ValueError(msg)
+ValueError: 'x' has size 3000, but 'y1' has an unequal size of 2000

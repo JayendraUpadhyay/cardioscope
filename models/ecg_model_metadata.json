@@ -1,0 +1,9 @@
+{
+  "seed": 42,
+  "usable_recordings": 187,
+  "window_length": 2000,
+  "stride": 1000,
+  "validation_split": "recording-level 80/20",
+  "best_validation_mse": 0.023972306067755036,
+  "label_status": "No ground-truth labels; reconstruction error is an anomaly proxy."
+}

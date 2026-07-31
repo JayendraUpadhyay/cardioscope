@@ -1,0 +1,17 @@
+{
+ "argv": [
+  "C:\\Users\\91941\\.gemini\\antigravity\\scratch\\cardioscope\\.venv\\Scripts\\python.exe",
+  "-Xfrozen_modules=off",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "Python 3 (cardioscope)",
+ "language": "python",
+ "metadata": {
+  "debugger": true,
+  "supported_encryption": "curve"
+ },
+ "kernel_protocol_version": "5.5"
+}

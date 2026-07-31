@@ -1,0 +1,56 @@
+{
+  "top_features": [
+    {
+      "feature": "ap_hi",
+      "mean_abs_shap": 0.792012
+    },
+    {
+      "feature": "age_years",
+      "mean_abs_shap": 0.240192
+    },
+    {
+      "feature": "cholesterol",
+      "mean_abs_shap": 0.203934
+    },
+    {
+      "feature": "bmi",
+      "mean_abs_shap": 0.102256
+    },
+    {
+      "feature": "active",
+      "mean_abs_shap": 0.053834
+    },
+    {
+      "feature": "ap_lo",
+      "mean_abs_shap": 0.051406
+    },
+    {
+      "feature": "pulse_pressure",
+      "mean_abs_shap": 0.038009
+    },
+    {
+      "feature": "weight",
+      "mean_abs_shap": 0.034145
+    },
+    {
+      "feature": "height",
+      "mean_abs_shap": 0.031744
+    },
+    {
+      "feature": "gluc",
+      "mean_abs_shap": 0.020979
+    },
+    {
+      "feature": "smoke",
+      "mean_abs_shap": 0.019996
+    },
+    {
+      "feature": "alco",
+      "mean_abs_shap": 0.013307
+    },
+    {
+      "feature": "gender",
+      "mean_abs_shap": 0.006106
+    }
+  ]
+}

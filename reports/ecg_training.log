@@ -1,0 +1,55 @@
+======================================================================
+CardioScope — 05 ECG Autoencoder Model
+======================================================================
+  Device:       cpu
+  Window size:  2000 samples
+  Stride:       1000 samples
+  Latent dim:   64
+  Batch size:   128
+  Epochs:       50
+
+[1/9] Loading preprocessed ECG signals...
+  Loaded from cache: (187, 87554)
+  Signals shape: (187, 87554)  (recordings × samples)
+
+[2/9] Normalizing each recording to [0, 1]...
+
+[3/9] Windowing signals into fixed-length segments...
+  Total windows:   16,082
+  Window shape:    (16082, 2000)
+  Windows per rec: 86.0 (avg)
+
+[4/9] Recording-level split: 150 train / 37 validation recordings
+         Windows: 12,900 train / 3,182 validation
+
+[5/9] Model Architecture:
+  Trainable parameters: 46,977
+
+[6/9] Training autoencoder for 50 epochs...
+  Epoch   1/50  train_loss=0.054685  val_loss=0.031005 [BEST]
+  Epoch   5/50  train_loss=0.030293  val_loss=0.027610 [BEST]
+  Epoch  10/50  train_loss=0.029163  val_loss=0.026497 [BEST]
+  Epoch  15/50  train_loss=0.028229  val_loss=0.025663 [BEST]
+  Epoch  20/50  train_loss=0.027729  val_loss=0.025106 [BEST]
+  Epoch  25/50  train_loss=0.027249  val_loss=0.024713 [BEST]
+  Epoch  30/50  train_loss=0.027054  val_loss=0.024509 [BEST]
+  Epoch  35/50  train_loss=0.026804  val_loss=0.024304 [BEST]
+  Epoch  40/50  train_loss=0.026676  val_loss=0.024189 [BEST]
+  Epoch  45/50  train_loss=0.026529  val_loss=0.024097 [BEST]
+  Epoch  50/50  train_loss=0.026434  val_loss=0.023978
+
+  Best val loss: 0.023972
+
+[7/9] Plotting training curves...
+  Saved: reports/figures/ecg_training_loss.png
+
+[8/9] Computing per-recording anomaly scores...
+  Saved: models/ecg_anomaly_scores.npy
+  Saved: models/ecg_model_metadata.json
+  Mean anomaly score:   0.025832
+  Median anomaly score: 0.027587
+  Min anomaly score:    0.006294
+  Max anomaly score:    0.049219
+  Saved: reports/figures/ecg_anomaly_score_distribution.png
+
+[9/9] Computing saliency map for a sample window...

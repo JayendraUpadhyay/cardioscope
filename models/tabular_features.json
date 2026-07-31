@@ -1,0 +1,15 @@
+[
+  "age_years",
+  "gender",
+  "height",
+  "weight",
+  "bmi",
+  "ap_hi",
+  "ap_lo",
+  "pulse_pressure",
+  "cholesterol",
+  "gluc",
+  "smoke",
+  "alco",
+  "active"
+]
