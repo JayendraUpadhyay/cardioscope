@@ -105,7 +105,7 @@ def _load_models():
         state["ecg_anomaly_scores"] = np.load(ecg_scores)
         logger.info(f"ECG anomaly scores loaded: {state['ecg_anomaly_scores'].shape}")
 
-    signals_path = os.path.join(BACKEND_DIR, '..', 'data', 'ecg_signals_usable.npy')
+    signals_path = os.path.join(BACKEND_DIR, '..', 'models', 'ecg_signals_display.npy')
     if os.path.exists(signals_path):
         state["ecg_signals"] = np.load(signals_path, mmap_mode='r')
         logger.info("ECG display signals loaded.")
